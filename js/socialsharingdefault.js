@@ -20,5 +20,11 @@
 		iconClass: 'icon-social-diaspora'
 	});
 	OC.Share.Social.Collection.add(diaspora);
-
+	var googleplus = new OC.Share.Social.Model({
+		key: 'googleplus',
+		url: 'https://plus.google.com/share?url={{reference}}',
+		name: 'Google+',
+		iconClass: 'icon-social-googleplus'
+	});
+	OC.Share.Social.Collection.add(googleplus);
 })();
