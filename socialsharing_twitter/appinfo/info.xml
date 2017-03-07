@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<info>
+	<id>socialsharingtwitter</id>
+	<name>Social sharing twitter</name>
+	<licence>AGPL</licence>
+	<author>Roeland Jago Douma</author>
+	<description>
+		This allows the user to directly share link shares to twitter
+	</description>
+	<version>0.0.1</version>
+	<namespace>SocialSharingTwitter</namespace>
+	<dependencies>
+		<nextcloud min-version="12" max-version="12" />
+	</dependencies>
+</info>

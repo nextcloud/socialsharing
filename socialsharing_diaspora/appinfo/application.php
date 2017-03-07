@@ -20,17 +20,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-namespace OCA\SocialSharingDefault\AppInfo;
+namespace OCA\SocialSharingDiaspora\AppInfo;
 
-use OCP\Util;
+use OCP\AppFramework\App;
 
-$app = new Application();
-$c = $app->getContainer();
-$appName = $c->query('AppName');
+class Application extends App {
 
-$loadScripts = function() use ($appName) {
-	Util::addScript($appName, 'socialsharingdefault');
-	Util::addStyle($appName, 'socialsharingdefault');
-};
-
-\OC::$server->getEventDispatcher()->addListener('OCA\Files::loadAdditionalScripts', $loadScripts);
+	/**
+	 * Constructor
+	 *
+	 * @param array $urlParams
+	 */
+	public function __construct(array $urlParams = []) {
+		parent::__construct('socialsharingdiaspora', $urlParams);
+	}
+}

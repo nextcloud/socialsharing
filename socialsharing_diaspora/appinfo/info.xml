@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<info>
+	<id>socialsharingdiaspora</id>
+	<name>Social sharing diaspora</name>
+	<licence>AGPL</licence>
+	<author>Roeland Jago Douma</author>
+	<description>
+		This allows the user to directly share link shares to diaspora
+	</description>
+	<version>0.0.1</version>
+	<namespace>SocialSharingDiaspora</namespace>
+	<dependencies>
+		<nextcloud min-version="12" max-version="12" />
+	</dependencies>
+</info>
