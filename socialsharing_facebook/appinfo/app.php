@@ -20,7 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-namespace OCA\SocialSharingDefault\AppInfo;
+namespace OCA\SocialSharingFacebook\AppInfo;
 
 use OCP\Util;
 
@@ -29,8 +29,8 @@ $c = $app->getContainer();
 $appName = $c->query('AppName');
 
 $loadScripts = function() use ($appName) {
-	Util::addScript($appName, 'socialsharingdefault');
-	Util::addStyle($appName, 'socialsharingdefault');
+	Util::addScript($appName, 'socialsharingfacebook');
+	Util::addStyle($appName, 'socialsharingfacebook');
 };
 
 \OC::$server->getEventDispatcher()->addListener('OCA\Files::loadAdditionalScripts', $loadScripts);

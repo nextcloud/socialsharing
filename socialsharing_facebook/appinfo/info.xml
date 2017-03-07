@@ -1,15 +1,14 @@
 <?xml version="1.0"?>
 <info>
-	<id>socialsharingdefault</id>
-	<name>Social sharing default</name>
+	<id>socialsharing_facebook</id>
+	<name>Social sharing facebook</name>
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
 	<description>
-		This allows the user to directly share link shares to facebook, twitter
-		and google+
+		This allows the user to directly share link shares to facebook.
 	</description>
 	<version>0.0.1</version>
-	<namespace>SocialSharingDefault</namespace>
+	<namespace>SocialSharingFacebook</namespace>
 	<dependencies>
 		<nextcloud min-version="12" max-version="12" />
 	</dependencies>

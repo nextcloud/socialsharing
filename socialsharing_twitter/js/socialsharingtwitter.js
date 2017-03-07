@@ -1,4 +1,3 @@
-<?php
 /**
  * @copyright 2017, Roeland Jago Douma <roeland@famdouma.nl>
  *
@@ -20,18 +19,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-namespace OCA\SocialSharingDefault\AppInfo;
 
-use OCP\AppFramework\App;
-
-class Application extends App {
-
-	/**
-	 * Constructor
-	 *
-	 * @param array $urlParams
-	 */
-	public function __construct(array $urlParams = []) {
-		parent::__construct('socialsharingdefault', $urlParams);
-	}
-}
+(function() {
+	var twitter = new OC.Share.Social.Model({
+		key: 'twitter',
+		url: 'https://twitter.com/intent/tweet?url={{reference}}',
+		name: 'Twitter',
+		iconClass: 'icon-social-twitter'
+	});
+	OC.Share.Social.Collection.add(twitter);
+})();
