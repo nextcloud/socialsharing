@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <info>
-	<id>socialsharinggoogleplus</id>
+	<id>socialsharing_googleplus</id>
 	<name>Social sharing google+</name>
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>

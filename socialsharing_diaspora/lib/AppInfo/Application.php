@@ -20,7 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-namespace OCA\SocialSharingFacebook\AppInfo;
+namespace OCA\SocialSharingDiaspora\AppInfo;
 
 use OCP\AppFramework\App;
 
@@ -32,6 +32,6 @@ class Application extends App {
 	 * @param array $urlParams
 	 */
 	public function __construct(array $urlParams = []) {
-		parent::__construct('socialsharingfacebook', $urlParams);
+		parent::__construct('socialsharing_diaspora', $urlParams);
 	}
 }

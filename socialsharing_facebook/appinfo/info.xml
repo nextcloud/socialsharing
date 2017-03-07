@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <info>
-	<id>socialsharingfacebook</id>
+	<id>socialsharing_facebook</id>
 	<name>Social sharing facebook</name>
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
