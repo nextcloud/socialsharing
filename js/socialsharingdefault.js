@@ -35,6 +35,13 @@
 		iconClass: 'icon-social-facebook'
 	});
 	OC.Share.Social.Collection.add(facebook);
+	var diaspora = new OC.Share.Social.Model({
+		key: 'diaspora',
+		url: 'https://share.diasporafoundation.org/?url={{reference}}',
+		name: 'Diaspora',
+		iconClass: 'icon-social-diaspora'
+	});
+	OC.Share.Social.Collection.add(diaspora);
 	var googleplus = new OC.Share.Social.Model({
 		key: 'googleplus',
 		url: 'https://plus.google.com/share?url={{reference}}',
