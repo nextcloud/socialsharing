@@ -25,7 +25,8 @@
 		key: 'email',
 		url: 'mailto:?subject=I shared a file with yout&body={{reference}}',
 		name: 'Email',
-		iconClass: 'icon-social-email'
+		iconClass: 'icon-social-email',
+		newWindow: false
 	});
 	OC.Share.Social.Collection.add(email);
 })();
