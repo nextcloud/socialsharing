@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <info>
 	<id>socialsharing_diaspora</id>
-	<name>Social sharing diaspora</name>
+	<name>Social sharing via Diaspora</name>
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
-	<description>This allows the user to directly share link shares to diaspora</description>
+	<description>Enable direct sharing of files via Diaspora, using shared links.</description>
 	<version>1.0.0</version>
 	<category>social</category>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_diaspora/screenshots/preview.png</screenshot>
