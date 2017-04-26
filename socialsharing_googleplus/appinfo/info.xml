@@ -4,10 +4,10 @@
 	<name>Social sharing google+</name>
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
-	<description>
-		This allows the user to directly share link shares to google+.
-	</description>
-	<version>0.0.1</version>
+	<description>This allows the user to directly share link shares to google+.</description>
+	<version>1.0.0</version>
+	<category>social</category>
+	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_googleplus/screenshots/preview.png</screenshot>
 	<namespace>SocialSharingGooglePlus</namespace>
 	<dependencies>
 		<nextcloud min-version="12" max-version="12" />
