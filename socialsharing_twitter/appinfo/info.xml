@@ -4,9 +4,7 @@
 	<name>Social sharing twitter</name>
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
-	<description>
-		This allows the user to directly share link shares to twitter
-	</description>
+	<description>This allows the user to directly share link shares to twitter</description>
 	<version>1.0.0</version>
 	<category>social</category>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_twitter/screenshots/preview.png</screenshot>

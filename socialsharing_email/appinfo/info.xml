@@ -4,9 +4,7 @@
 	<name>Social sharing email</name>
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
-	<description>
-		This allows the user to directly share link shares to email.
-	</description>
+	<description>This allows the user to directly share link shares to email.</description>
 	<version>1.0.0</version>
 	<category>social</category>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_email/screenshots/preview.png</screenshot>
