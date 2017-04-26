@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <info>
 	<id>socialsharing_facebook</id>
-	<name>Social sharing facebook</name>
+	<name>Social sharing via Facebook</name>
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
-	<description>This allows the user to directly share link shares to facebook.</description>
+	<description>Enable direct sharing of files via Facebook, using shared links.</description>
 	<version>1.0.0</version>
 	<category>social</category>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_facebook/screenshots/preview.png</screenshot>
