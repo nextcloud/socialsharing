@@ -32,6 +32,6 @@ appstore:
 	--exclude=vendor/bin \
 	$(project_dir) $(sign_dir)
 	@echo "Signing…"
-	tar -czf $(build_dir)/$(app_name).tar.gz \
+	tar -czf $(build_dir)/$(app_name)-$(version).tar.gz \
 		-C $(sign_dir) $(app_name)
 	openssl dgst -sha512 -sign $(cert_dir)/$(app_name).key $(build_dir)/$(app_name)-$(version).tar.gz | openssl base64; \
