@@ -8,7 +8,7 @@ appstore_dir=$(build_dir)/appstore
 source_dir=$(build_dir)/source
 package_name=$(app_name)
 cert_dir=$(HOME)/.nextcloud/certificates
-version+=1.0.1
+version+=1.0.3
 
 appstore:
 	mkdir -p $(sign_dir)
