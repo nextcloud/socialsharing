@@ -4,6 +4,6 @@ lang_map = bg_BG: bg, cs_CZ: cs, fi_FI: fi, hu_HU: hu, nb_NO: nb, sk_SK: sk, th_
 
 [nextcloud.socialsharing_googleplus]
 file_filter = <lang>/socialsharing_googleplus.po
-source_file = templates/socialsharing_googleplus.pot
+source_file = translationfiles/templates/socialsharing_googleplus.pot
 source_lang = en
 type = PO
