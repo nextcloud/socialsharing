@@ -23,7 +23,9 @@
 (function() {
 	var email = new OC.Share.Social.Model({
 		key: 'email',
-		url: 'mailto:?subject=I shared a file with you&body={{reference}}',
+		url: 'mailto:?subject=' +
+			t('socialsharing_email' , 'I shared a file with you') +
+			'&body={{reference}}',
 		name: 'Email',
 		iconClass: 'icon-social-email',
 		newWindow: false
