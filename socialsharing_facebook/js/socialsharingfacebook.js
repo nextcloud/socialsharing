@@ -2,6 +2,7 @@
  * @copyright 2017, Roeland Jago Douma <roeland@famdouma.nl>
  *
  * @author Roeland Jago Douma <roeland@famdouma.nl>
+ * @author John Molakvoæ <skjnldsv@protonmail.com>
  *
  * @license GNU AGPL version 3 or any later version
  *
@@ -20,12 +21,12 @@
  *
  */
 
-(function() {
-	var facebook = new OC.Share.Social.Model({
-		key: 'facebook',
-		url: 'https://www.facebook.com/sharer/sharer.php?u={{reference}}',
-		name: 'Facebook',
-		iconClass: 'icon-social-facebook'
-	});
-	OC.Share.Social.Collection.add(facebook);
-})();
+window.addEventListener('DOMContentLoaded', () => {
+	if (OCA.Sharing && OCA.Sharing.ExternalLinkActions) {
+		OCA.Sharing.ExternalLinkActions.registerAction({
+			url: link => `https://www.facebook.com/sharer/sharer.php?u=${link}`,
+			name: t('socialsharing_facebook', 'Share to Facebook'),
+			icon: 'icon-social-facebook'
+		});
+	}
+});

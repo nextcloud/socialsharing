@@ -2,6 +2,7 @@
  * @copyright 2017, Roeland Jago Douma <roeland@famdouma.nl>
  *
  * @author Roeland Jago Douma <roeland@famdouma.nl>
+ * @author John Molakvoæ <skjnldsv@protonmail.com>
  *
  * @license GNU AGPL version 3 or any later version
  *
@@ -20,12 +21,12 @@
  *
  */
 
-(function() {
-	var twitter = new OC.Share.Social.Model({
-		key: 'twitter',
-		url: 'https://twitter.com/intent/tweet?url={{reference}}',
-		name: 'Twitter',
-		iconClass: 'icon-social-twitter'
-	});
-	OC.Share.Social.Collection.add(twitter);
-})();
+window.addEventListener('DOMContentLoaded', () => {
+	if (OCA.Sharing && OCA.Sharing.ExternalLinkActions) {
+		OCA.Sharing.ExternalLinkActions.registerAction({
+			url: link => `https://twitter.com/intent/tweet?url=${link}`,
+			name: t('socialsharing_facebook', 'Share to Twitter'),
+			icon: 'icon-social-twitter'
+		});
+	}
+});

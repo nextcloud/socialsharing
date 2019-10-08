@@ -2,6 +2,7 @@
  * @copyright 2017, Roeland Jago Douma <roeland@famdouma.nl>
  *
  * @author Roeland Jago Douma <roeland@famdouma.nl>
+ * @author John Molakvoæ <skjnldsv@protonmail.com>
  *
  * @license GNU AGPL version 3 or any later version
  *
@@ -20,15 +21,12 @@
  *
  */
 
-(function() {
-	var email = new OC.Share.Social.Model({
-		key: 'email',
-		url: 'mailto:?subject=' +
-			t('socialsharing_email' , 'I shared a file with you') +
-			'&body={{reference}}',
-		name: 'Email',
-		iconClass: 'icon-social-email',
-		newWindow: false
-	});
-	OC.Share.Social.Collection.add(email);
-})();
+window.addEventListener('DOMContentLoaded', () => {
+	if (OCA.Sharing && OCA.Sharing.ExternalLinkActions) {
+		OCA.Sharing.ExternalLinkActions.registerAction({
+			url: link => `mailto:?subject=${t('socialsharing_email', 'I shared a file with you')}&body=${link}`,
+			name: t('socialsharing_email', 'Share to email'),
+			icon: 'icon-mail'
+		});
+	}
+});

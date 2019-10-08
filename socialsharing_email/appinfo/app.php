@@ -30,7 +30,6 @@ $appName = $c->query('AppName');
 
 $loadScripts = function() use ($appName) {
 	Util::addScript($appName, 'socialsharingemail');
-	Util::addStyle($appName, 'socialsharingemail');
 };
 
 \OC::$server->getEventDispatcher()->addListener('OCP\Share::loadSocial', $loadScripts);
