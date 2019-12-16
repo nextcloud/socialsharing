@@ -2,6 +2,7 @@
  * @copyright 2017, Roeland Jago Douma <roeland@famdouma.nl>
  *
  * @author Roeland Jago Douma <roeland@famdouma.nl>
+ * @author John Molakvoæ <skjnldsv@protonmail.com>
  *
  * @license GNU AGPL version 3 or any later version
  *
@@ -20,12 +21,12 @@
  *
  */
 
-(function() {
-	var diaspora = new OC.Share.Social.Model({
-		key: 'diaspora',
-		url: 'https://share.diasporafoundation.org/?url={{reference}}',
-		name: 'Diaspora',
-		iconClass: 'icon-social-diaspora'
-	});
-	OC.Share.Social.Collection.add(diaspora);
-})();
+window.addEventListener('DOMContentLoaded', () => {
+	if (OCA.Sharing && OCA.Sharing.ExternalLinkActions) {
+		OCA.Sharing.ExternalLinkActions.registerAction({
+			url: link =>`https://share.diasporafoundation.org/?url=${link}`,
+			name: t('socialsharing_facebook', 'Share to  Diaspora'),
+			icon: 'icon-social-diaspora'
+		});
+	}
+});
