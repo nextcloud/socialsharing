@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	if (OCA.Sharing && OCA.Sharing.ExternalLinkActions) {
 		OCA.Sharing.ExternalLinkActions.registerAction({
 			url: link =>`https://share.diasporafoundation.org/?url=${link}`,
-			name: t('socialsharing_facebook', 'Share to  Diaspora'),
+			name: t('socialsharing_facebook', 'Share to Diaspora'),
 			icon: 'icon-social-diaspora'
 		});
 	}
