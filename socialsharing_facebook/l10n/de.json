@@ -1,4 +1,5 @@
 { "translations": {
-    "Share to Facebook" : "Auf Facebook teilen"
+    "Share to Facebook" : "Auf Facebook teilen",
+    "Social sharing via Facebook" : "Teilen in sozialen Medien via Facebook"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
