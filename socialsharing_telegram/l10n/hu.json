@@ -1,0 +1,6 @@
+{ "translations": {
+    "Share to Telegram" : "Megosztás a Telegramra",
+    "Social sharing via Telegram" : "Közösségi megosztás Telegrammal",
+    "Enable direct sharing of files via Telegram, using shared links." : "Fájlok közvetlen megosztása a Telegram segítségével, megosztott hivatkozások használatával."
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
