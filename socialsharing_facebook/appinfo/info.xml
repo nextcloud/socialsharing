@@ -10,7 +10,7 @@
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_facebook/screenshots/preview.png</screenshot>
 	<namespace>SocialSharingFacebook</namespace>
 	<dependencies>
-		<nextcloud min-version="22" max-version="24" />
+		<nextcloud min-version="22" max-version="27" />
 	</dependencies>
 	<bugs>https://github.com/nextcloud/socialsharing</bugs>
 	<website>https://github.com/nextcloud/socialsharing</website>
