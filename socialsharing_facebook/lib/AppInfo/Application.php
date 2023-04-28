@@ -23,15 +23,34 @@
 namespace OCA\SocialSharingFacebook\AppInfo;
 
 use OCP\AppFramework\App;
+use OCP\AppFramework\Bootstrap\IBootContext;
+use OCP\AppFramework\Bootstrap\IBootstrap;
+use OCP\AppFramework\Bootstrap\IRegistrationContext;
+use OCP\EventDispatcher\IEventDispatcher;
+use OCP\Util;
 
-class Application extends App {
+class Application extends App implements IBootstrap {
 
-	/**
-	 * Constructor
-	 *
-	 * @param array $urlParams
-	 */
-	public function __construct(array $urlParams = []) {
-		parent::__construct('socialsharing_facebook', $urlParams);
-	}
+    public const APP_ID = 'socialsharing_facebook';
+
+    public function __construct() {
+        parent::__construct(self::APP_ID);
+
+        $dispatcher = $this->getContainer()->get(IEventDispatcher::class);
+
+        $loadScripts = function() {
+            Util::addScript(self::APP_ID, 'socialsharingfacebook');
+            Util::addStyle(self::APP_ID, 'socialsharingfacebook');
+        };
+
+        $dispatcher->addListener('OCP\Share::loadSocial', $loadScripts);
+        $dispatcher->addListener('OCA\Files::loadAdditionalScripts', $loadScripts);
+
+    }
+
+    public function register(IRegistrationContext $context): void {
+    }
+
+    public function boot(IBootContext $context): void {
+    }
 }
