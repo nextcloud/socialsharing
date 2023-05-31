@@ -40,7 +40,6 @@ class Application extends App implements IBootstrap {
 
         $loadScripts = function() {
             Util::addScript(self::APP_ID, 'socialsharingemail');
-            Util::addStyle(self::APP_ID, 'socialsharingemail');
         };
 
         $dispatcher->addListener('OCP\Share::loadSocial', $loadScripts);
