@@ -5,12 +5,12 @@
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
 	<description>Enable direct sharing of files via email, using shared links.</description>
-	<version>2.7.0</version>
+	<version>3.0.0</version>
 	<category>social</category>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_email/screenshots/preview.png</screenshot>
 	<namespace>SocialSharingEmail</namespace>
 	<dependencies>
-		<nextcloud min-version="22" max-version="28" />
+		<nextcloud min-version="26" max-version="28" />
 	</dependencies>
 	<bugs>https://github.com/nextcloud/socialsharing</bugs>
 	<website>https://github.com/nextcloud/socialsharing</website>
