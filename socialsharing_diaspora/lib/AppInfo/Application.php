@@ -26,31 +26,31 @@ use OCP\AppFramework\App;
 use OCP\AppFramework\Bootstrap\IBootContext;
 use OCP\AppFramework\Bootstrap\IBootstrap;
 use OCP\AppFramework\Bootstrap\IRegistrationContext;
-use OCP\EventDispatcher\IEventDispatcher;
+use OCP\EventDispatcher\Event;
+use OCP\EventDispatcher\IEventListener;
 use OCP\Util;
+use Psr\Log\LoggerInterface;
 
-class Application extends App implements IBootstrap {
+class Application extends App implements IBootstrap, IEventListener {
 
     public const APP_ID = 'socialsharing_diaspora';
 
 	public function __construct() {
 		parent::__construct(self::APP_ID);
-
-        $dispatcher = $this->getContainer()->get(IEventDispatcher::class);
-
-        $loadScripts = function() {
-            Util::addScript(self::APP_ID, 'socialsharingdiaspora');
-            Util::addStyle(self::APP_ID, 'socialsharingdiaspora');
-        };
-
-        $dispatcher->addListener('OCP\Share::loadSocial', $loadScripts);
-        $dispatcher->addListener('OCA\Files::loadAdditionalScripts', $loadScripts);
-
     }
 
     public function register(IRegistrationContext $context): void {
+        \OCP\Server::get(LoggerInterface::class)->warning('NOW: register');
+        $context->registerEventListener(\OCA\Files\Event\LoadSidebar::class, self::class);
+        $context->registerEventListener(\OCA\Files\Event\LoadAdditionalScriptsEvent::class, self::class);
     }
 
     public function boot(IBootContext $context): void {
+    }
+
+    public function handle(Event $event): void {
+        Util::addScript(self::APP_ID, self::APP_ID, 'files');
+        Util::addStyle(self::APP_ID, self::APP_ID);
+        \OCP\Server::get(LoggerInterface::class)->warning('NOW: addScripts');
     }
 }
