@@ -26,6 +26,7 @@ use OCP\AppFramework\App;
 use OCP\AppFramework\Bootstrap\IBootContext;
 use OCP\AppFramework\Bootstrap\IBootstrap;
 use OCP\AppFramework\Bootstrap\IRegistrationContext;
+use OCP\EventDispatcher\Event;
 use OCP\EventDispatcher\IEventDispatcher;
 use OCP\Util;
 
@@ -35,22 +36,18 @@ class Application extends App implements IBootstrap {
 
     public function __construct() {
         parent::__construct(self::APP_ID);
-
-        $dispatcher = $this->getContainer()->get(IEventDispatcher::class);
-
-        $loadScripts = function() {
-            Util::addScript(self::APP_ID, 'socialsharingtelegram');
-            Util::addStyle(self::APP_ID, 'socialsharingtelegram');
-        };
-
-        $dispatcher->addListener('OCP\Share::loadSocial', $loadScripts);
-        $dispatcher->addListener('OCA\Files::loadAdditionalScripts', $loadScripts);
-
     }
 
     public function register(IRegistrationContext $context): void {
+        $context->registerEventListener(\OCA\Files\Event\LoadSidebar::class, self::class);
+        $context->registerEventListener(\OCA\Files\Event\LoadAdditionalScriptsEvent::class, self::class);
     }
 
     public function boot(IBootContext $context): void {
+    }
+
+    public function handle(Event $event): void {
+        Util::addScript(self::APP_ID, self::APP_ID);
+        Util::addStyle(self::APP_ID, self::APP_ID);
     }
 }
