@@ -1,3 +1,14 @@
-.icon-social-twitter {
- background-image: url('../img/x.svg');
+.icon-social-twitter,
+[data-themes*=light] .icon-social-twitter {
+	background-image: url('../img/x.svg');
+}
+
+[data-themes*=dark] .icon-social-twitter {
+	background-image: url('../img/app.svg');
+}
+
+@media (prefers-color-scheme: dark) {
+	.icon-social-twitter {
+		background-image: url('../img/app.svg');
+	}
 }

@@ -1,3 +1,14 @@
-.icon-social-facebook {
- background-image: url('../img/facebook.svg');
+.icon-social-facebook,
+[data-themes*=light] .icon-social-facebook {
+	background-image: url('../img/facebook.svg');
+}
+
+[data-themes*=dark] .icon-social-facebook {
+	background-image: url('../img/app.svg');
+}
+
+@media (prefers-color-scheme: dark) {
+	.icon-social-facebook {
+		background-image: url('../img/app.svg');
+	}
 }
