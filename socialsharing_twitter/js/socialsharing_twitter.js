@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	if (OCA.Sharing && OCA.Sharing.ExternalLinkActions) {
 		OCA.Sharing.ExternalLinkActions.registerAction({
 			url: link => `https://twitter.com/intent/tweet?url=${link}`,
-			name: t('socialsharing_facebook', 'Share to Twitter'),
+			name: t('socialsharing_twitter', 'Share to X'),
 			icon: 'icon-social-twitter'
 		});
 	}
