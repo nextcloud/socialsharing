@@ -1,3 +1,14 @@
-.icon-social-diaspora {
- background-image: url('../img/diaspora.svg');
+.icon-social-diaspora,
+[data-themes*=light] .icon-social-diaspora {
+	background-image: url('../img/diaspora.svg');
+}
+
+[data-themes*=dark] .icon-social-diaspora {
+	background-image: url('../img/app.svg');
+}
+
+@media (prefers-color-scheme: dark) {
+	.icon-social-diaspora {
+		background-image: url('../img/app.svg');
+	}
 }

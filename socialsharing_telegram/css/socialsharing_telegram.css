@@ -1,3 +1,14 @@
-.icon-social-telegram {
- background-image: url('../img/telegram.svg');
+.icon-social-telegram,
+[data-themes*=light] .icon-social-telegram {
+	background-image: url('../img/telegram.svg');
+}
+
+[data-themes*=dark] .icon-social-telegram {
+	background-image: url('../img/app.svg');
+}
+
+@media (prefers-color-scheme: dark) {
+	.icon-social-telegram {
+		background-image: url('../img/app.svg');
+	}
 }
