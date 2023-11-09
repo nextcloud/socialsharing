@@ -1,7 +1,6 @@
 OC.L10N.register(
     "socialsharing_twitter",
     {
-    "Share to Twitter" : "Дели на Twitter",
     "Social sharing via Twitter" : "Друштвено дељење преко Twitter",
     "Enable direct sharing of files via Twitter, using shared links." : "Омогућава директно дељење фајлова преко Twitter, употребом линкова дељења."
 },

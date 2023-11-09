@@ -1,7 +1,6 @@
 OC.L10N.register(
     "socialsharing_twitter",
     {
-    "Share to Twitter" : "Partager sur Twitter",
     "Social sharing via Twitter" : "Partage social via Twitter",
     "Enable direct sharing of files via Twitter, using shared links." : "Activer le partage direct de fichiers via Twitter grâce à des liens de partage."
 },
