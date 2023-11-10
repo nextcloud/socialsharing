@@ -40,7 +40,6 @@ class Application extends App implements IBootstrap, IEventListener {
     }
 
     public function register(IRegistrationContext $context): void {
-        \OCP\Server::get(LoggerInterface::class)->warning('NOW: register');
         $context->registerEventListener(\OCA\Files\Event\LoadSidebar::class, self::class);
         $context->registerEventListener(\OCA\Files\Event\LoadAdditionalScriptsEvent::class, self::class);
     }
@@ -51,6 +50,5 @@ class Application extends App implements IBootstrap, IEventListener {
     public function handle(Event $event): void {
         Util::addScript(self::APP_ID, self::APP_ID, 'files');
         Util::addStyle(self::APP_ID, self::APP_ID);
-        \OCP\Server::get(LoggerInterface::class)->warning('NOW: addScripts');
     }
 }
