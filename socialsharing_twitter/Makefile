@@ -11,7 +11,7 @@ cert_dir=$(HOME)/.nextcloud/certificates
 
 appstore:
 	mkdir -p $(sign_dir)
-	rsync -a \
+	rsync -a --delete \
 	--exclude=.git \
 	--exclude=build \
 	--exclude=.gitignore \

@@ -5,7 +5,7 @@
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
 	<description>Enable direct sharing of files via Twitter, using shared links.</description>
-	<version>3.0.0</version>
+	<version>3.0.1</version>
 	<category>social</category>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_twitter/screenshots/preview.png</screenshot>
 	<namespace>SocialSharingTwitter</namespace>
