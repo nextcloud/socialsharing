@@ -10,7 +10,7 @@
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_telegram/screenshots/preview.png</screenshot>
 	<namespace>SocialSharingTelegram</namespace>
 	<dependencies>
-		<nextcloud min-version="26" max-version="30" />
+		<nextcloud min-version="28" max-version="30" />
 	</dependencies>
 	<bugs>https://github.com/nextcloud/socialsharing</bugs>
 	<website>https://github.com/nextcloud/socialsharing</website>

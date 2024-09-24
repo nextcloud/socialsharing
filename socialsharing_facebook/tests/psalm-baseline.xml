@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="5.26.1@d747f6500b38ac4f7dfc5edbcae6e4b637d7add0">
+  <file src="lib/AppInfo/Application.php">
+    <ImplementedParamTypeMismatch>
+      <code><![CDATA[$event]]></code>
+    </ImplementedParamTypeMismatch>
+    <InvalidArgument>
+      <code><![CDATA[self::class]]></code>
+      <code><![CDATA[self::class]]></code>
+    </InvalidArgument>
+    <InvalidTemplateParam>
+      <code><![CDATA[IEventListener]]></code>
+    </InvalidTemplateParam>
+    <UndefinedClass>
+      <code><![CDATA[\OCA\Files\Event\LoadAdditionalScriptsEvent]]></code>
+      <code><![CDATA[\OCA\Files\Event\LoadSidebar]]></code>
+    </UndefinedClass>
+    <UndefinedDocblockClass>
+      <code><![CDATA[Application]]></code>
+      <code><![CDATA[Application]]></code>
+    </UndefinedDocblockClass>
+  </file>
+</files>
