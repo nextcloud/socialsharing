@@ -5,12 +5,12 @@
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
 	<description>Enable direct sharing of files via Diaspora, using shared links.</description>
-	<version>3.1.0</version>
+	<version>3.2.0</version>
 	<category>social</category>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_diaspora/screenshots/preview.png</screenshot>
 	<namespace>SocialSharingDiaspora</namespace>
 	<dependencies>
-		<nextcloud min-version="26" max-version="29" />
+		<nextcloud min-version="26" max-version="30" />
 	</dependencies>
 	<bugs>https://github.com/nextcloud/socialsharing</bugs>
 	<website>https://github.com/nextcloud/socialsharing</website>
