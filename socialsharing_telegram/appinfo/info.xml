@@ -2,16 +2,17 @@
 <info>
 	<id>socialsharing_telegram</id>
 	<name>Social sharing via Telegram</name>
+	<description>Enable direct sharing of files via Telegram, using shared links.</description>
+	<summary>Enable direct sharing of files via Telegram, using shared links.</summary>
+	<version>3.2.0</version>
 	<licence>AGPL</licence>
 	<author>Roeland Jago Douma</author>
-	<description>Enable direct sharing of files via Telegram, using shared links.</description>
-	<version>3.2.0</version>
-	<category>social</category>
-	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_telegram/screenshots/preview.png</screenshot>
 	<namespace>SocialSharingTelegram</namespace>
+	<category>social</category>
+	<website>https://github.com/nextcloud/socialsharing</website>
+	<bugs>https://github.com/nextcloud/socialsharing</bugs>
+	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_telegram/screenshots/preview.png</screenshot>
 	<dependencies>
 		<nextcloud min-version="28" max-version="30" />
 	</dependencies>
-	<bugs>https://github.com/nextcloud/socialsharing</bugs>
-	<website>https://github.com/nextcloud/socialsharing</website>
 </info>
