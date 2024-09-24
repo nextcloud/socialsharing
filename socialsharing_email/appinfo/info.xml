@@ -2,8 +2,8 @@
 <info>
 	<id>socialsharing_email</id>
 	<name>Social sharing via email</name>
-	<description>Enable direct sharing of files via email, using shared links.</description>
 	<summary>Enable direct sharing of files via email, using shared links.</summary>
+	<description>Enable direct sharing of files via email, using shared links.</description>
 	<version>3.2.0</version>
 	<licence>agpl</licence>
 	<author>Roeland Jago Douma</author>
