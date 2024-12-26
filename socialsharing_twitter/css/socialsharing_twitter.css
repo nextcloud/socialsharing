@@ -1,3 +1,8 @@
+/**
+ * SPDX-FileCopyrightText: 2017 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
+
 .icon-social-twitter,
 [data-themes*=light] .icon-social-twitter {
 	background-image: url('../img/x.svg');
