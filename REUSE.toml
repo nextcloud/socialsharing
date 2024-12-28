@@ -24,31 +24,31 @@ SPDX-FileCopyrightText = "2024 Nextcloud GmbH and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
 
 [[annotations]]
-path = "**/img/app.svg"
+path = "socialsharing_email/img/app.svg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2018-2024 Google LLC"
 SPDX-License-Identifier = "Apache-2.0"
 
 [[annotations]]
-path = "socialsharing_diaspora/img/diaspora.svg"
+path = ["socialsharing_diaspora/img/app.svg", "socialsharing_diaspora/img/diaspora.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2024 Diaspora"
 SPDX-License-Identifier = "LicenseRef-DiasporaTrademarks"
 
 [[annotations]]
-path = "socialsharing_facebook/img/facebook.svg"
+path = ["socialsharing_facebook/img/app.svg", "socialsharing_facebook/img/facebook.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2024 Meta"
 SPDX-License-Identifier = "LicenseRef-FacebookTrademarks"
 
 [[annotations]]
-path = "socialsharing_telegram/img/telegram.svg"
+path = ["socialsharing_telegram/img/app.svg", "socialsharing_telegram/img/telegram.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2024 Telegram"
 SPDX-License-Identifier = "LicenseRef-TelegramTrademarks"
 
 [[annotations]]
-path = "socialsharing_twitter/img/x.svg"
+path = ["socialsharing_twitter/img/app.svg", "socialsharing_twitter/img/x.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2024 X Corp."
 SPDX-License-Identifier = "LicenseRef-XTrademarks"
