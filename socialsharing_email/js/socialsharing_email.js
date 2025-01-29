@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		OCA.Sharing.ExternalLinkActions.registerAction({
 			url: link => `mailto:?subject=${t('socialsharing_email', 'I shared a file with you')}&body=${link}`,
 			name: t('socialsharing_email', 'Share via email'),
-			icon: 'icon-mail'
+			icon: 'icon-social-mail'
 		});
 	}
 });

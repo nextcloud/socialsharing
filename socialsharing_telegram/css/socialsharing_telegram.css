@@ -3,17 +3,6 @@
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
-.icon-social-telegram,
-[data-themes*=light] .icon-social-telegram {
+.icon-social-telegram {
 	background-image: url('../img/telegram.svg');
-}
-
-[data-themes*=dark] .icon-social-telegram {
-	background-image: url('../img/app.svg');
-}
-
-@media (prefers-color-scheme: dark) {
-	.icon-social-telegram {
-		background-image: url('../img/app.svg');
-	}
 }
