@@ -3,17 +3,6 @@
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
-.icon-social-twitter,
-[data-themes*=light] .icon-social-twitter {
+.icon-social-twitter {
 	background-image: url('../img/x.svg');
-}
-
-[data-themes*=dark] .icon-social-twitter {
-	background-image: url('../img/app.svg');
-}
-
-@media (prefers-color-scheme: dark) {
-	.icon-social-twitter {
-		background-image: url('../img/app.svg');
-	}
 }
