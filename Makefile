@@ -6,3 +6,4 @@ appstore:
 	(cd socialsharing_facebook && make appstore)
 	(cd socialsharing_telegram && make appstore)
 	(cd socialsharing_twitter && make appstore)
+	(cd socialsharing_whatsapp && make appstore)

@@ -52,3 +52,9 @@ path = ["socialsharing_twitter/img/app.svg", "socialsharing_twitter/img/x.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2024 X Corp."
 SPDX-License-Identifier = "LicenseRef-XTrademarks"
+
+[[annotations]]
+path = ["socialsharing_whatsapp/img/whatsapp.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 Meta"
+SPDX-License-Identifier = "LicenseRef-WhatsappTrademarks"
