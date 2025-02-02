@@ -54,13 +54,13 @@ SPDX-FileCopyrightText = "2024 X Corp."
 SPDX-License-Identifier = "LicenseRef-XTrademarks"
 
 [[annotations]]
-path = ["socialsharing_whatsapp/img/app.svg"]
+path = ["socialsharing_whatsapp/img/app.svg", "socialsharing_whatsapp/img/whatsapp.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 Meta"
 SPDX-License-Identifier = "LicenseRef-WhatsappTrademarks"
 
 [[annotations]]
-path = ["socialsharing_bluesky/img/app.svg"]
+path = ["socialsharing_bluesky/img/app.svg", "socialsharing_bluesky/img/bluesky.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 Bluesky, PBC"
 SPDX-License-Identifier = "LicenseRef-BlueskyTrademarks"
