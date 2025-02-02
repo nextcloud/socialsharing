@@ -38,7 +38,7 @@ jobs:
       fail-fast: false
       matrix:
         php-versions: ${{fromJson(needs.matrix.outputs.php-versions)}}
-        APP_NAME: [ 'socialsharing_diaspora', 'socialsharing_email', 'socialsharing_facebook', 'socialsharing_telegram', 'socialsharing_twitter' ]
+        APP_NAME: [ 'socialsharing_diaspora', 'socialsharing_email', 'socialsharing_facebook', 'socialsharing_telegram', 'socialsharing_twitter', 'socialsharing_whatsapp', 'socialsharing_bluesky' ]
 
 
     name: php-lint

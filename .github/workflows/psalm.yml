@@ -20,7 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        APP_NAME: [ 'socialsharing_diaspora', 'socialsharing_email', 'socialsharing_facebook', 'socialsharing_telegram', 'socialsharing_twitter' ]
+        APP_NAME: [ 'socialsharing_diaspora', 'socialsharing_email', 'socialsharing_facebook', 'socialsharing_telegram', 'socialsharing_twitter', 'socialsharing_whatsapp', 'socialsharing_bluesky' ]
 
 
     name: static-psalm-analysis
