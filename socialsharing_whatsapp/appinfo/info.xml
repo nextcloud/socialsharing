@@ -8,7 +8,7 @@
 	<name>Social sharing via WhatsApp</name>
 	<summary>Enable direct sharing of files via WhatsApp, using shared links.</summary>
 	<description>Enable direct sharing of files via WhatsApp, using shared links.</description>
-	<version>1.0.0</version>
+	<version>3.3.0</version>
 	<licence>agpl</licence>
 	<author>Jana Peper</author>
 	<namespace>SocialSharingWhatsapp</namespace>

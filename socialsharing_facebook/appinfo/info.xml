@@ -8,7 +8,7 @@
 	<name>Social sharing via Facebook</name>
 	<summary>Enable direct sharing of files via Facebook, using shared links.</summary>
 	<description>Enable direct sharing of files via Facebook, using shared links.</description>
-	<version>3.2.0</version>
+	<version>3.3.0</version>
 	<licence>agpl</licence>
 	<author>Roeland Jago Douma</author>
 	<namespace>SocialSharingFacebook</namespace>
@@ -17,6 +17,6 @@
 	<bugs>https://github.com/nextcloud/socialsharing</bugs>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_facebook/screenshots/preview.png</screenshot>
 	<dependencies>
-		<nextcloud min-version="28" max-version="30" />
+		<nextcloud min-version="28" max-version="32" />
 	</dependencies>
 </info>
