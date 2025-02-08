@@ -1,0 +1,8 @@
+OC.L10N.register(
+    "socialsharing_whatsapp",
+    {
+    "Share to Whatsapp" : "Sdílet na Whatsapp",
+    "Social sharing via WhatsApp" : "Sociální sdílení prostřednictvím WhatsApp",
+    "Enable direct sharing of files via WhatsApp, using shared links." : "Zapnout přímé sdílení souborů prostřednictvím WhatsApp, využívající odkazy na sdílení."
+},
+"nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;");
