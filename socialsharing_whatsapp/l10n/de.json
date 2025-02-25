@@ -1,6 +1,6 @@
 { "translations": {
-    "Share to Whatsapp" : "Benötigt keine Übersetzung. Hier wird nur die formelle Übersetzung verwendet (de_DE).",
-    "Social sharing via WhatsApp" : "Benötigt keine Übersetzung. Hier wird nur die formelle Übersetzung verwendet (de_DE).",
-    "Enable direct sharing of files via WhatsApp, using shared links." : "Benötigt keine Übersetzung. Hier wird nur die formelle Übersetzung verwendet (de_DE)."
+    "Share to Whatsapp" : "Auf WhatsApp teilen",
+    "Social sharing via WhatsApp" : "Teilen in sozialen Medien über WhatsApp",
+    "Enable direct sharing of files via WhatsApp, using shared links." : "Direktes Teilen von Dateien über WhatsApp mittels geteilter Links aktivieren."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
