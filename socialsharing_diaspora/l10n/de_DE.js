@@ -3,6 +3,6 @@ OC.L10N.register(
     {
     "Share to Diaspora" : "Auf Diaspora teilen",
     "Social sharing via Diaspora" : "Teilen in sozialen Medien via Diaspora",
-    "Enable direct sharing of files via Diaspora, using shared links." : "Direktes Bereitstellen von Dateien via Diaspora mithilfe von geteilten Links aktivieren"
+    "Enable direct sharing of files via Diaspora, using shared links." : "Direktes Teilen von Dateien über Diaspora mithilfe von geteilten Links aktivieren."
 },
 "nplurals=2; plural=(n != 1);");
