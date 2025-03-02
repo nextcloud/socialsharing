@@ -2,7 +2,7 @@ OC.L10N.register(
     "socialsharing_email",
     {
     "I shared a file with you" : "Я надав(-ла) вам доступ до файлу",
-    "Share via email" : "Поділіться електронною поштою",
+    "Share via email" : "Поділіться за допомогою ел. пошти",
     "Social sharing via email" : "Обмін інформацією через електронну пошту",
     "Enable direct sharing of files via email, using shared links." : "Увімкніть прямий обмін файлами за допомогою електронної пошти через посилання спільного доступу."
 },
