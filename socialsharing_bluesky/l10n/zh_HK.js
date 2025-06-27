@@ -1,6 +1,7 @@
 OC.L10N.register(
     "socialsharing_bluesky",
     {
+    "I shared a file with you" : "我與您分享了檔案",
     "Share to Bluesky" : "分享到 Bluesky",
     "Social sharing via Bluesky" : "透過 Bluesky 進行社交分享",
     "Enable direct sharing of files via Bluesky, using shared links." : "使用分享連結，透過 Bluesky 直接分享檔案。",
