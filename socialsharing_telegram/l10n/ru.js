@@ -1,6 +1,7 @@
 OC.L10N.register(
     "socialsharing_telegram",
     {
+    "I shared a file with you" : "Я поделился с вами файлом",
     "Share to Telegram" : "Поделиться в Telegram",
     "Social sharing via Telegram" : "Поделиться через Telegram",
     "Enable direct sharing of files via Telegram, using shared links." : "Разрешить прямой обмен файлами через Telegram, используя общие ссылки"

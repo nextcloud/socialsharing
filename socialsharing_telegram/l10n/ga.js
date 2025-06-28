@@ -1,6 +1,7 @@
 OC.L10N.register(
     "socialsharing_telegram",
     {
+    "I shared a file with you" : "Roinn mé comhad leat",
     "Share to Telegram" : "Roinn le Telegram",
     "Social sharing via Telegram" : "Comhroinnt shóisialta trí Telegram",
     "Enable direct sharing of files via Telegram, using shared links." : "Cumasaigh roinnt comhaid go díreach trí Telegram, ag baint úsáide as naisc roinnte."

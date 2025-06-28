@@ -1,4 +1,5 @@
 { "translations": {
+    "I shared a file with you" : "Споделив датотека со вас",
     "Share to Telegram" : "Сподели преку Telegram",
     "Social sharing via Telegram" : "Споделување преку Telegram",
     "Enable direct sharing of files via Telegram, using shared links." : "Овозможи директно споделување на датотеки преку Telegram, со користење на линкови за споделување."

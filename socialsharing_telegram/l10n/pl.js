@@ -1,6 +1,7 @@
 OC.L10N.register(
     "socialsharing_telegram",
     {
+    "I shared a file with you" : "Udostępniłem Ci plik",
     "Share to Telegram" : "Udostępnij w Telegramie",
     "Social sharing via Telegram" : "Udostępnianie społecznościowe przez Telegram",
     "Enable direct sharing of files via Telegram, using shared links." : "Włącz bezpośrednie udostępnianie plików przez Telegram za pomocą linków udostępniania."
