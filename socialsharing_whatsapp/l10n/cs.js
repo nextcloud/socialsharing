@@ -1,6 +1,7 @@
 OC.L10N.register(
     "socialsharing_whatsapp",
     {
+    "I shared a file with you" : "Sdílím vám/Ti soubor",
     "Share to Whatsapp" : "Sdílet na Whatsapp",
     "Social sharing via WhatsApp" : "Sociální sdílení prostřednictvím WhatsApp",
     "Enable direct sharing of files via WhatsApp, using shared links." : "Zapnout přímé sdílení souborů prostřednictvím WhatsApp, využívající odkazy na sdílení."

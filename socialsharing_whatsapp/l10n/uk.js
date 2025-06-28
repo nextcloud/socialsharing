@@ -1,6 +1,7 @@
 OC.L10N.register(
     "socialsharing_whatsapp",
     {
+    "I shared a file with you" : "Я надав(-ла) вам доступ до файлу",
     "Share to Whatsapp" : "Поділитися через WhatsApp",
     "Social sharing via WhatsApp" : "Надання у спільний доступ через WhatsApp",
     "Enable direct sharing of files via WhatsApp, using shared links." : "Увімкнути пряме надання файлів у спільний доступ через WhatsApp за допомогою посилань спільного доступу."

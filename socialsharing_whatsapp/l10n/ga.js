@@ -1,6 +1,7 @@
 OC.L10N.register(
     "socialsharing_whatsapp",
     {
+    "I shared a file with you" : "Roinn mé comhad leat",
     "Share to Whatsapp" : "Roinn le Whatsapp",
     "Social sharing via WhatsApp" : "Comhroinnt shóisialta trí WhatsApp",
     "Enable direct sharing of files via WhatsApp, using shared links." : "Cumasaigh roinnt comhaid go díreach trí WhatsApp, ag baint úsáide as naisc roinnte."
