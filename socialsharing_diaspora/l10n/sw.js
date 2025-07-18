@@ -1,0 +1,8 @@
+OC.L10N.register(
+    "socialsharing_diaspora",
+    {
+    "Share to Diaspora" : "Shiriki kwa Diaspora",
+    "Social sharing via Diaspora" : "Kushiriki kijamii kupitia Diaspora",
+    "Enable direct sharing of files via Diaspora, using shared links." : "Washa ushiriki wa moja kwa moja wa faili kupitia Diaspora, kwa kutumia viungo vilivyoshirikiwa."
+},
+"nplurals=2; plural=(n != 1);");
