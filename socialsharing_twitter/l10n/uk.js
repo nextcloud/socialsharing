@@ -1,6 +1,7 @@
 OC.L10N.register(
     "socialsharing_twitter",
     {
+    "Share to X" : "Поділитися в X",
     "Social sharing via Twitter" : "Обмін інформацією через Twitter",
     "Enable direct sharing of files via Twitter, using shared links." : "Увімкніть прямий обмін файлами за допомогою Twitter через посилання спільного доступу."
 },
