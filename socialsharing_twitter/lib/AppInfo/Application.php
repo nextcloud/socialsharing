@@ -34,7 +34,6 @@ class Application extends App implements IBootstrap, IEventListener {
 	}
 
 	public function handle(Event $event): void {
-		Util::addScript(self::APP_ID, self::APP_ID);
-		Util::addStyle(self::APP_ID, self::APP_ID);
+		Util::addScript(self::APP_ID, self::APP_ID . '-user', 'files');
 	}
 }
