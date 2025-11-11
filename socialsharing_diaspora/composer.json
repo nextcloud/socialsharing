@@ -11,7 +11,7 @@
     "psalm:update-baseline:force": "psalm.phar --threads=1 --update-baseline --set-baseline=tests/psalm-baseline.xml"
   },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "^3",
+    "friendsofphp/php-cs-fixer": "3.x",
     "nextcloud/coding-standard": "^1",
     "psalm/phar": "6.*",
     "nextcloud/ocp": "dev-master"
