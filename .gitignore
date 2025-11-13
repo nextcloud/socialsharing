@@ -3,5 +3,5 @@
 build
 js
 node_modules
-composer.lock
+vendor
 .php-cs-fixer.cache
