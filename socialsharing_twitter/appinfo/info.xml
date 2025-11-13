@@ -8,7 +8,7 @@
 	<name>Social sharing via Twitter</name>
 	<summary>Enable direct sharing of files via Twitter, using shared links.</summary>
 	<description>Enable direct sharing of files via Twitter, using shared links.</description>
-	<version>4.0.0</version>
+	<version>4.0.1</version>
 	<licence>agpl</licence>
 	<author>Roeland Jago Douma</author>
 	<namespace>SocialSharingTwitter</namespace>
