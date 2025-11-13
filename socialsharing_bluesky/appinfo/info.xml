@@ -21,6 +21,6 @@ This app always links to bsky.app. Using other domains is not possible with this
 	<bugs>https://github.com/nextcloud/socialsharing</bugs>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_bluesky/screenshots/preview.png</screenshot>
 	<dependencies>
-		<nextcloud min-version="30" max-version="32" />
+		<nextcloud min-version="30" max-version="33" />
 	</dependencies>
 </info>

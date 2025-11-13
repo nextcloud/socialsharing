@@ -17,6 +17,6 @@
 	<bugs>https://github.com/nextcloud/socialsharing</bugs>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/socialsharing/master/socialsharing_email/screenshots/preview.png</screenshot>
 	<dependencies>
-		<nextcloud min-version="30" max-version="32" />
+		<nextcloud min-version="30" max-version="33" />
 	</dependencies>
 </info>
