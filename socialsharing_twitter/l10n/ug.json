@@ -1,6 +1,6 @@
 { "translations": {
-    "Share to X" : "X گە ئورتاقلىشىش",
     "Social sharing via Twitter" : "Twitter ئارقىلىق ئىجتىمائىي ئورتاقلىشىش",
-    "Enable direct sharing of files via Twitter, using shared links." : "ئورتاق ئۇلىنىش ئارقىلىق Twitter ئارقىلىق ھۆججەتلەرنى بىۋاسىتە ھەمبەھىرلەشنى قوزغىتىڭ."
+    "Enable direct sharing of files via Twitter, using shared links." : "ئورتاق ئۇلىنىش ئارقىلىق Twitter ئارقىلىق ھۆججەتلەرنى بىۋاسىتە ھەمبەھىرلەشنى قوزغىتىڭ.",
+    "Share to X" : "X گە ئورتاقلىشىش"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
