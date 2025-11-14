@@ -1,8 +1,8 @@
 OC.L10N.register(
     "socialsharing_diaspora",
     {
-    "Share to Diaspora" : "Сподели преку Diaspora",
     "Social sharing via Diaspora" : "Споделување преку Diaspora",
-    "Enable direct sharing of files via Diaspora, using shared links." : "Овозможи директно споделување на датотеки преку Diaspora, со користење на линкови за споделување."
+    "Enable direct sharing of files via Diaspora, using shared links." : "Овозможи директно споделување на датотеки преку Diaspora, со користење на линкови за споделување.",
+    "Share to Diaspora" : "Сподели преку Diaspora"
 },
 "nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;");

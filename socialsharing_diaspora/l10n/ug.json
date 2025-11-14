@@ -1,6 +1,6 @@
 { "translations": {
-    "Share to Diaspora" : "دىئاسپوراغا ھەمبەھىرلىنىش",
     "Social sharing via Diaspora" : "دىئاسپورا ئارقىلىق ئىجتىمائىي ئورتاقلىشىش",
-    "Enable direct sharing of files via Diaspora, using shared links." : "ئورتاق ئۇلىنىش ئارقىلىق دىئاسپورا ئارقىلىق ھۆججەتلەرنى بىۋاسىتە ھەمبەھىرلەشنى قوزغىتىڭ."
+    "Enable direct sharing of files via Diaspora, using shared links." : "ئورتاق ئۇلىنىش ئارقىلىق دىئاسپورا ئارقىلىق ھۆججەتلەرنى بىۋاسىتە ھەمبەھىرلەشنى قوزغىتىڭ.",
+    "Share to Diaspora" : "دىئاسپوراغا ھەمبەھىرلىنىش"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
