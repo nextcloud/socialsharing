@@ -1,7 +1,7 @@
 OC.L10N.register(
     "socialsharing_facebook",
     {
-    "Share to Facebook" : "Jaa Facebookiin",
-    "Social sharing via Facebook" : "Sosiaalista jakamista Facebookin kautta"
+    "Social sharing via Facebook" : "Sosiaalista jakamista Facebookin kautta",
+    "Share to Facebook" : "Jaa Facebookiin"
 },
 "nplurals=2; plural=(n != 1);");
