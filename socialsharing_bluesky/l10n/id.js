@@ -1,0 +1,10 @@
+OC.L10N.register(
+    "socialsharing_bluesky",
+    {
+    "Social sharing via Bluesky" : "Berbagi sosial melalui Bluesky",
+    "Enable direct sharing of files via Bluesky, using shared links." : "Aktifkan berbagi file langsung melalui Bluesky, menggunakan tautan berbagi.",
+    "Enable direct sharing of files via Bluesky, using shared links. \n\t\nThis app always links to bsky.app. Using other domains is not possible with this app." : "Aktifkan berbagi file langsung melalui Bluesky, menggunakan tautan berbagi. \n\t\nAplikasi ini selalu menautkan ke bsky.app. Menggunakan domain lain tidak memungkinkan dengan aplikasi ini.",
+    "I shared a file with you" : "Saya membagikan sebuah file dengan Anda",
+    "Share to Bluesky" : "Bagikan ke Bluesky"
+},
+"nplurals=1; plural=0;");
