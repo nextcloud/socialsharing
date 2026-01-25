@@ -1,0 +1,8 @@
+OC.L10N.register(
+    "socialsharing_facebook",
+    {
+    "Social sharing via Facebook" : "Condivisione sociale tramite Facebook",
+    "Enable direct sharing of files via Facebook, using shared links." : "Abilita la condivisione diretta dei file tramite Facebook, utilizzando collegamenti condivisi.",
+    "Share to Facebook" : "Condividi con Facebook"
+},
+"nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
