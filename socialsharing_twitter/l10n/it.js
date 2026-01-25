@@ -1,0 +1,8 @@
+OC.L10N.register(
+    "socialsharing_twitter",
+    {
+    "Social sharing via Twitter" : "Condivisione sociale tramite Twitter",
+    "Enable direct sharing of files via Twitter, using shared links." : "Abilita la condivisione diretta dei file tramite Twitter, utilizzando collegamenti condivisi.",
+    "Share to X" : "Condividi con X"
+},
+"nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
