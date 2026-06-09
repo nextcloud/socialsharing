@@ -31,6 +31,7 @@ appstore:
 	--exclude=phpunit*xml \
 	--exclude=tests \
 	--exclude=vendor/bin \
+	--exclude=node_modules \
 	$(project_dir) $(sign_dir)
 	@echo "Signing…"
 	tar -czf $(build_dir)/$(app_name).tar.gz \
