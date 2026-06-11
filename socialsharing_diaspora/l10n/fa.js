@@ -1,8 +1,8 @@
 OC.L10N.register(
     "socialsharing_diaspora",
     {
-    "Social sharing via Diaspora" : "Social sharing via Diaspora",
-    "Enable direct sharing of files via Diaspora, using shared links." : "Enable direct sharing of files via Diaspora, using shared links.",
-    "Share to Diaspora" : "Share to Diaspora"
+    "Social sharing via Diaspora" : "اشتراک‌گذاری اجتماعی از طریق Diaspora",
+    "Enable direct sharing of files via Diaspora, using shared links." : "اشتراک‌گذاری مستقیم پرونده‌ها از طریق Diaspora با استفاده از پیوندهای اشتراک‌گذاری‌شده را فعال کنید.",
+    "Share to Diaspora" : "اشتراک‌گذاری در Diaspora"
 },
 "nplurals=2; plural=(n > 1);");
