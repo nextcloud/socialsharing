@@ -2,7 +2,7 @@
     "Social sharing via Bluesky" : "هم‌رسانی اجتماعی از طریق Bluesky",
     "Enable direct sharing of files via Bluesky, using shared links." : "هم‌رسانی مستقیم فایل‌ها از طریق Bluesky را با استفاده از پیوندهای اشتراک فعال کنید.",
     "Enable direct sharing of files via Bluesky, using shared links. \n\t\nThis app always links to bsky.app. Using other domains is not possible with this app." : "هم‌رسانی مستقیم فایل‌ها از طریق Bluesky را با استفاده از پیوندهای اشتراک فعال کنید. \n\t\nاین برنامه همیشه به bsky.app پیوند می‌دهد. استفاده از دامنه‌های دیگر با این برنامه ممکن نیست.",
-    "I shared a file with you" : "I shared a file with you",
+    "I shared a file with you" : "یک فایل را با شما به اشتراک گذاشتم",
     "Share to Bluesky" : "هم‌رسانی در Bluesky"
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }
