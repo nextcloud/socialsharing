@@ -1,9 +1,9 @@
 OC.L10N.register(
     "socialsharing_whatsapp",
     {
-    "Social sharing via WhatsApp" : "هم‌رسانی اجتماعی از طریق WhatsApp",
-    "Enable direct sharing of files via WhatsApp, using shared links." : "هم‌رسانی مستقیم فایل‌ها از طریق WhatsApp را با استفاده از پیوندهای اشتراک فعال کنید.",
-    "I shared a file with you" : "فایلی را با شما هم‌رسانی کردم",
-    "Share to Whatsapp" : "هم‌رسانی در WhatsApp"
+    "Social sharing via WhatsApp" : "اشتراک‌گذاری اجتماعی از طریق واتس‌اپ",
+    "Enable direct sharing of files via WhatsApp, using shared links." : "فعال‌سازی اشتراک‌گذاری مستقیم فایل‌ها از طریق واتس‌اپ با استفاده از لینک‌های اشتراکی",
+    "I shared a file with you" : "من یک فایل با شما به اشتراک گذاشتم",
+    "Share to Whatsapp" : "اشتراک‌گذاری در واتس‌اپ"
 },
 "nplurals=2; plural=(n > 1);");
