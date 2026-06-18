@@ -1,7 +1,7 @@
 { "translations": {
     "Social sharing via Telegram" : "اشتراک‌گذاری اجتماعی از طریق تلگرام",
-    "Enable direct sharing of files via Telegram, using shared links." : "اشتراک‌گذاری مستقیم پرونده‌ها را از طریق تلگرام و با استفاده از پیوندهای اشتراکی فعال کنید.",
-    "I shared a file with you" : "یک پرونده را با شما به اشتراک گذاشتم",
-    "Share to Telegram" : "در تلگرام به اشتراک بگذارید"
+    "Enable direct sharing of files via Telegram, using shared links." : "فعال‌سازی اشتراک‌گذاری مستقیم فایل‌ها از طریق تلگرام با استفاده از لینک‌های اشتراکی",
+    "I shared a file with you" : "یک فایل با شما به اشتراک گذاشتم",
+    "Share to Telegram" : "اشتراک‌گذاری در تلگرام"
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }
