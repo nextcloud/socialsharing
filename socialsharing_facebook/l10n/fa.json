@@ -1,6 +1,6 @@
 { "translations": {
     "Social sharing via Facebook" : "اشتراک‌گذاری اجتماعی از طریق فیسبوک",
-    "Enable direct sharing of files via Facebook, using shared links." : "اشتراک‌گذاری مستقیم پرونده‌ها از طریق فیسبوک با استفاده از پیوندهای اشتراکی را فعال کنید.",
+    "Enable direct sharing of files via Facebook, using shared links." : "فعال‌سازی اشتراک‌گذاری مستقیم فایل‌ها از طریق فیسبوک با استفاده از لینک‌های اشتراکی",
     "Share to Facebook" : "اشتراک‌گذاری در فیسبوک"
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }
