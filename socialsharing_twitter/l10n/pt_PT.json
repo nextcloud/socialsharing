@@ -1,4 +1,5 @@
 { "translations": {
-    "Social sharing via Twitter" : "Compartilhamento social via X"
+    "Social sharing via Twitter" : "Compartilhamento social via X",
+    "Share to X" : "Compartilhar no X"
 },"pluralForm" :"nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;"
 }
