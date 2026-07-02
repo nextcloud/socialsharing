@@ -1,6 +1,7 @@
 OC.L10N.register(
     "socialsharing_bluesky",
     {
+    "Enable direct sharing of files via Bluesky, using shared links." : "Ativar compartilhamento direto de arquivos via Bluesky, usando links de compartilhamento.",
     "I shared a file with you" : "Eu partilhei um ficheiro contigo ",
     "Share to Bluesky" : "Compartilhar no Bluesky"
 },
