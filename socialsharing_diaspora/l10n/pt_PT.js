@@ -1,6 +1,7 @@
 OC.L10N.register(
     "socialsharing_diaspora",
     {
+    "Social sharing via Diaspora" : "Compartilhamento social via Diaspora",
     "Enable direct sharing of files via Diaspora, using shared links." : "Ativar compartilhamento de arquivos direto via Diaspora, usando links de compartilhamento.",
     "Share to Diaspora" : "Compartilhar na Diaspora"
 },
