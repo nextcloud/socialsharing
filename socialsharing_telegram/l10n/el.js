@@ -1,8 +1,9 @@
 OC.L10N.register(
     "socialsharing_telegram",
     {
-    "Social sharing via Telegram" : "Διαμοιρασμός μέσω Telegram",
+    "Social sharing via Telegram" : "Κοινοποίηση σε μέσα κοινωνικής δικτύωσης μέσω Telegram",
+    "Enable direct sharing of files via Telegram, using shared links." : "Ενεργοποίηση άμεσης κοινοποίησης αρχείων μέσω Telegram, με χρήση κοινόχρηστων συνδέσμων.",
     "I shared a file with you" : "Μοιράστηκα ένα αρχείο μαζί σου",
-    "Share to Telegram" : "Διαμοιραστείτε στο Telegram"
+    "Share to Telegram" : "Κοινοποίηση στο Telegram"
 },
 "nplurals=2; plural=(n != 1);");
