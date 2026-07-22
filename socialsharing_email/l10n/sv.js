@@ -1,6 +1,8 @@
 OC.L10N.register(
     "socialsharing_email",
     {
+    "Social sharing via email" : "Social delning via e-post",
+    "Enable direct sharing of files via email, using shared links." : "Aktivera direktdelning av filer via e-post med delade länkar.",
     "I shared a file with you" : "Jag delade en fil med dig",
     "Share via email" : "Dela via e-post"
 },
