@@ -4,9 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c798cd893c2c9ebf80be6deb8a8deae6",
-    "packages": [],
-    "packages-dev": [
+    "content-hash": "a593509de1d62c8956b4e3cc4421abf3",
+    "packages": [
         {
             "name": "bamarni/composer-bin-plugin",
             "version": "1.9.1",
@@ -63,7 +62,9 @@
                 "source": "https://github.com/bamarni/composer-bin-plugin/tree/1.9.1"
             },
             "time": "2026-02-04T10:18:12+00:00"
-        },
+        }
+    ],
+    "packages-dev": [
         {
             "name": "clue/ndjson-react",
             "version": "v1.3.0",
