@@ -3,7 +3,6 @@ OC.L10N.register(
     {
     "Social sharing via Bluesky" : "Bendrinimas socialiniuose tinkluose per Bluesky",
     "Enable direct sharing of files via Bluesky, using shared links." : "Įgalinti tiesioginį failų bendrinimą per Bluesky naudojant bendrinamas nuorodas.",
-    "Enable direct sharing of files via Bluesky, using shared links. \n\t\nThis app always links to bsky.app. Using other domains is not possible with this app." : "Įgalinkite tiesioginį failų bendrinimą per „Bluesky“, naudodami bendrinamas nuorodas.\n\nŠi programėlė visada susieja su bsky.app. Kitų domenų naudojimas su šia programėle neįmanomas.",
     "I shared a file with you" : "Aš pasidalinau su jumis failu",
     "Share to Bluesky" : "Bendrinti į „Bluesky“"
 },
