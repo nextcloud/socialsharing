@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Social sharing via Bluesky" : "Comhroinnt shóisialta trí Bluesky",
     "Enable direct sharing of files via Bluesky, using shared links." : "Cumasaigh roinnt comhaid go díreach trí Bluesky, ag baint úsáide as naisc roinnte.",
+    "Enable direct sharing of files via Bluesky, using shared links.\n\nThis app always links to bsky.app. Using other domains is not possible with this app." : "Cumasaigh comhroinnt dhíreach comhad trí Bluesky, ag baint úsáide as naisc chomhroinnte.\n\nNascann an aip seo i gcónaí le bsky.app. Ní féidir fearainn eile a úsáid leis an aip seo.",
     "I shared a file with you" : "Roinn mé comhad leat",
     "Share to Bluesky" : "Comhroinn le Bluesky"
 },
