@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Social sharing via Bluesky" : "Delning via Bluesky",
     "Enable direct sharing of files via Bluesky, using shared links." : "Aktivera direktdelning av filer via Bluesky med delningslänkar.",
+    "Enable direct sharing of files via Bluesky, using shared links.\n\nThis app always links to bsky.app. Using other domains is not possible with this app." : "Aktivera direktdelning av filer via Bluesky med hjälp av delade länkar.\n\nAppen länkar alltid till bsky.app. Det går inte att använda andra domäner med den här appen.",
     "I shared a file with you" : "Jag delade en fil med dig",
     "Share to Bluesky" : "Dela till Bluesky"
 },
