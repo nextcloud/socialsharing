@@ -1,7 +1,9 @@
 OC.L10N.register(
     "socialsharing_email",
     {
-    "I shared a file with you" : "Saya membagikan sebuah file dengan Anda",
+    "Social sharing via email" : "Berbagi sosial melalui email",
+    "Enable direct sharing of files via email, using shared links." : "Aktifkan berbagi file langsung melalui email menggunakan tautan berbagi.",
+    "I shared a file with you" : "Saya membagikan file kepada Anda",
     "Share via email" : "Bagikan melalui email"
 },
 "nplurals=1; plural=0;");
