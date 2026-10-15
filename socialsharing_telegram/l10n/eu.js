@@ -1,0 +1,9 @@
+OC.L10N.register(
+    "socialsharing_telegram",
+    {
+    "Social sharing via Telegram" : "Partekatze soziala Telegramen bidez",
+    "Enable direct sharing of files via Telegram, using shared links." : "Gaitu fitxategiak zuzenean Telegram bidez partekatzea, partekatutako estekak erabiliz.",
+    "I shared a file with you" : "Zurekin partekatu dut fitxategi bat",
+    "Share to Telegram" : "Partekatu Telegramen"
+},
+"nplurals=2; plural=(n != 1);");
