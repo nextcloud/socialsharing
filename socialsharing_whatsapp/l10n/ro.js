@@ -1,0 +1,9 @@
+OC.L10N.register(
+    "socialsharing_whatsapp",
+    {
+    "Social sharing via WhatsApp" : "Partajare socială prin WhatsApp",
+    "Enable direct sharing of files via WhatsApp, using shared links." : "Activează partajarea directă a fișierelor prin WhatsApp, folosind linkuri partajate.",
+    "I shared a file with you" : "Am partajat un fișier cu tine",
+    "Share to Whatsapp" : "Partajează pe WhatsApp"
+},
+"nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));");
