@@ -2,8 +2,8 @@
  * SPDX-FileCopyrightText: 2017 Nextcloud GmbH and Nextcloud contributors
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
-import { registerSidebarInlineAction } from '@nextcloud/sharing/ui'
 import { generateUrl, getBaseUrl } from '@nextcloud/router'
+import { registerSidebarInlineAction } from '@nextcloud/sharing/ui'
 
 window.addEventListener('DOMContentLoaded', () => {
 	registerSidebarInlineAction({
@@ -12,11 +12,11 @@ window.addEventListener('DOMContentLoaded', () => {
 		enabled(share) {
 			return 'token' in share
 		},
-		exec(share, node) {
+		exec(share) {
 			const link = generateUrl('/s/{token}', { token: share.token }, { baseURL: getBaseUrl() })
 			window.open(`https://twitter.com/intent/tweet?url=${link}`)
 		},
-		label(share, node) {
+		label() {
 			return t('socialsharing_twitter', 'Share to X')
 		},
 		iconSvg: '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg">\n'
