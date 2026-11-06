@@ -9,60 +9,54 @@ updates:
       day: saturday
       time: "03:00"
       timezone: Europe/Paris
+    cooldown:
+      default-days: 10
     open-pull-requests-limit: 10
   - package-ecosystem: composer
-    directory: "/socialsharing_bluesky/"
+    directories:
+      - "/socialsharing_bluesky/"
+      - "/socialsharing_diaspora/"
+      - "/socialsharing_email/"
+      - "/socialsharing_facebook/"
+      - "/socialsharing_telegram/"
+      - "/socialsharing_twitter/"
+      - "/socialsharing_whatsapp/"
     schedule:
       interval: weekly
       day: saturday
       time: "03:00"
       timezone: Europe/Paris
+    cooldown:
+      default-days: 10
+      exclude:
+        - "nextcloud/*"
+    groups:
+      composer:
+        patterns:
+          - "*"
+        group-by: dependency-name
     open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/socialsharing_diaspora/"
+  - package-ecosystem: npm
+    directories:
+      - "/socialsharing_bluesky/"
+      - "/socialsharing_diaspora/"
+      - "/socialsharing_email/"
+      - "/socialsharing_facebook/"
+      - "/socialsharing_telegram/"
+      - "/socialsharing_twitter/"
+      - "/socialsharing_whatsapp/"
     schedule:
       interval: weekly
       day: saturday
       time: "03:00"
       timezone: Europe/Paris
-    open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/socialsharing_email/"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
-    open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/socialsharing_facebook/"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
-    open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/socialsharing_telegram/"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
-    open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/socialsharing_twitter/"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
-    open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/socialsharing_whatsapp/"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
+    cooldown:
+      default-days: 10
+      exclude:
+        - "@nextcloud/*"
+    groups:
+      npm:
+        patterns:
+          - "*"
+        group-by: dependency-name
     open-pull-requests-limit: 10
