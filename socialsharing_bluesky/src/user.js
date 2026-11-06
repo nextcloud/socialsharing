@@ -2,8 +2,8 @@
  * SPDX-FileCopyrightText: 2017 Nextcloud GmbH and Nextcloud contributors
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
-import { registerSidebarInlineAction } from '@nextcloud/sharing/ui'
 import { generateUrl, getBaseUrl } from '@nextcloud/router'
+import { registerSidebarInlineAction } from '@nextcloud/sharing/ui'
 
 window.addEventListener('DOMContentLoaded', () => {
 	registerSidebarInlineAction({
@@ -12,11 +12,11 @@ window.addEventListener('DOMContentLoaded', () => {
 		enabled(share) {
 			return 'token' in share
 		},
-		exec(share, node) {
+		exec(share) {
 			const link = generateUrl('/s/{token}', { token: share.token }, { baseURL: getBaseUrl() })
 			window.open(`https://bsky.app/intent/compose?text=${t('socialsharing_bluesky', 'I shared a file with you')}:%0A%0A${link}`)
 		},
-		label(share, node) {
+		label() {
 			return t('socialsharing_bluesky', 'Share to Bluesky')
 		},
 		iconSvg: `<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
