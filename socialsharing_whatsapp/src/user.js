@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		},
 		exec(share) {
 			const link = generateUrl('/s/{token}', { token: share.token }, { baseURL: getBaseUrl() })
-			window.open(`whatsapp://send?text=${t('socialsharing_email', 'I shared a file with you')}:%0A%0A${link}`)
+			window.open(`whatsapp://send?text=${t('socialsharing_whatsapp', 'I shared a file with you')}:%0A%0A${link}`)
 		},
 		label() {
 			return t('socialsharing_whatsapp', 'Share to Whatsapp')
