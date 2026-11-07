@@ -1,5 +1,5 @@
 {
-  "name": "socialsharing_bluesky",
+  "name": "socialsharing_diaspora",
   "version": "5.0.3",
   "main": "index.js",
   "type": "module",
