@@ -85,6 +85,14 @@ jobs:
         if: steps.freeze.outputs.active != 'true'
         run: npm i -g 'npm@${{ steps.versions.outputs.package-manager-version }}'
 
+      - name: Save the lockfiles before npm audit fix
+        if: steps.freeze.outputs.active != 'true'
+        run: |
+          for LOCKFILE in socialsharing_*/package-lock.json; do
+            mkdir -p "$RUNNER_TEMP/lockfiles/$(dirname "$LOCKFILE")"
+            cp "$LOCKFILE" "$RUNNER_TEMP/lockfiles/$LOCKFILE"
+          done
+
       - name: Fix npm audit (socialsharing_bluesky)
         id: audit-bluesky
         if: steps.freeze.outputs.active != 'true'
@@ -152,6 +160,7 @@ jobs:
             echo "${!VAR:-No report.}"
             echo
           done > "$RUNNER_TEMP/npm-audit.md"
+          node .github/scripts/lockfile-downgrades.mjs "$RUNNER_TEMP/lockfiles" >> "$RUNNER_TEMP/npm-audit.md"
 
       - name: Run npm ci and npm run build
         if: steps.freeze.outputs.active != 'true' && steps.checkout.outcome == 'success'
