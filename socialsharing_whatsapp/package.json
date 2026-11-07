@@ -16,7 +16,7 @@
   "license": "AGPL-3.0-or-later",
   "description": "",
   "dependencies": {
-    "@nextcloud/router": "^3.0.1",
+    "@nextcloud/router": "^3.2.0",
     "@nextcloud/sharing": "^0.3.0",
     "vue": "^3.5.45"
   },
