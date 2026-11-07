@@ -1,0 +1,125 @@
+# SPDX-FileCopyrightText: 2026 Nextcloud GmbH and Nextcloud contributors
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+name: Integration
+
+on: pull_request
+
+permissions:
+  contents: read
+
+concurrency:
+  group: integration-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+
+    name: integration
+
+    steps:
+      - name: Checkout apps
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          path: socialsharing
+
+      - name: Get version matrix
+        id: versions
+        uses: nextcloud-libraries/nextcloud-version-matrix@71959de73c244b11ecbf4503b87c41d65b0f64ae # v1.3.4
+        with:
+          filename: socialsharing/socialsharing_bluesky/appinfo/info.xml
+
+      - name: Checkout server ${{ steps.versions.outputs.branches-max }}
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          submodules: true
+          repository: nextcloud/server
+          ref: ${{ steps.versions.outputs.branches-max }}
+          path: server
+
+      - name: Set up php ${{ steps.versions.outputs.php-max }}
+        uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # 2.40.0
+        with:
+          php-version: ${{ steps.versions.outputs.php-max }}
+          extensions: bz2, ctype, curl, dom, fileinfo, gd, iconv, intl, json, libxml, mbstring, openssl, pcntl, posix, session, simplexml, xmlreader, xmlwriter, zip, zlib, sqlite, pdo_sqlite
+          coverage: none
+          ini-file: development
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Read package.json node and npm engines version
+        uses: nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92 # v0.2.0
+        id: engines
+        with:
+          path: socialsharing/socialsharing_bluesky/package.json
+
+      - name: Set up node ${{ steps.engines.outputs.node-version }}
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ steps.engines.outputs.node-version }}
+
+      - name: Set up npm ${{ steps.engines.outputs.package-manager-version }}
+        run: npm i -g 'npm@${{ steps.engines.outputs.package-manager-version }}'
+
+      - name: Build and install all apps
+        env:
+          CYPRESS_INSTALL_BINARY: 0
+        run: |
+          for APP in socialsharing/socialsharing_*/; do
+            APP=$(basename "$APP")
+            (cd "socialsharing/$APP" && npm ci && npm run build)
+            rsync -a --exclude node_modules "socialsharing/$APP/" "server/apps/$APP/"
+            echo "$APP" >> "$RUNNER_TEMP/apps"
+          done
+
+      - name: Set up Nextcloud and enable all apps
+        working-directory: server
+        run: |
+          mkdir data
+          ./occ maintenance:install --database=sqlite --admin-user admin --admin-pass admin
+          ./occ config:system:set trusted_domains 1 --value=localhost
+          ./occ app:enable $(cat "$RUNNER_TEMP/apps")
+
+      - name: Start the web server
+        working-directory: server
+        run: |
+          php -S localhost:8080 > "$RUNNER_TEMP/php-server.log" 2>&1 &
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:8080/status.php > /dev/null && exit 0
+            sleep 1
+          done
+          echo 'The web server did not start'
+          exit 1
+
+      - name: Check that the Files app loads every app's script
+        run: |
+          curl -sf -u admin:admin http://localhost:8080/index.php/apps/files/ -o "$RUNNER_TEMP/files.html"
+          FAILED=0
+          while read -r APP; do
+            SRC=$(grep -oE "[^\"']*/apps/$APP/js/$APP-user\.mjs[^\"']*" "$RUNNER_TEMP/files.html" | head -n 1)
+            if [ -z "$SRC" ]; then
+              echo "::error::The Files page does not include $APP-user.mjs"
+              FAILED=1
+              continue
+            fi
+            HEADERS=$(curl -s -D - -o "$RUNNER_TEMP/$APP.mjs" "http://localhost:8080$SRC")
+            if ! grep -qE '^HTTP/[0-9.]+ 200' <<< "$HEADERS" || ! grep -qi '^content-type: .*javascript' <<< "$HEADERS"; then
+              echo "::error::$SRC is not served as JavaScript"
+              FAILED=1
+            elif ! grep -q '_nc_files_sharing_sidebar_inline_actions' "$RUNNER_TEMP/$APP.mjs"; then
+              echo "::error::$SRC does not register a sidebar action"
+              FAILED=1
+            else
+              echo "$APP: $SRC"
+            fi
+          done < "$RUNNER_TEMP/apps"
+          exit $FAILED
+
+      - name: Show the server log on failure
+        if: failure()
+        run: |
+          cat "$RUNNER_TEMP/php-server.log" || true
+          cat server/data/nextcloud.log || true
