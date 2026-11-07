@@ -16,7 +16,7 @@ use OCP\EventDispatcher\IEventListener;
 use OCP\Util;
 
 /**
- * @implements IEventListener<\OCA\Files\Event\LoadAdditionalScriptsEvent|\OCA\Files\Event\LoadSidebar>
+ * @implements IEventListener<\OCA\Files\Event\LoadSidebar|\OCA\Files\Event\LoadAdditionalScriptsEvent>
  */
 class Application extends App implements IBootstrap, IEventListener {
 
