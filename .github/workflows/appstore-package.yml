@@ -1,0 +1,50 @@
+# SPDX-FileCopyrightText: 2026 Nextcloud GmbH and Nextcloud contributors
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+name: App Store package
+
+on: pull_request
+
+permissions:
+  contents: read
+
+concurrency:
+  group: appstore-package-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  appstore-package:
+    runs-on: ubuntu-latest
+
+    name: appstore-package
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Read package.json node and npm engines version
+        uses: nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92 # v0.2.0
+        id: versions
+        with:
+          path: socialsharing_bluesky/package.json
+
+      - name: Set up node ${{ steps.versions.outputs.node-version }}
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ steps.versions.outputs.node-version }}
+
+      - name: Set up npm ${{ steps.versions.outputs.package-manager-version }}
+        run: npm i -g 'npm@${{ steps.versions.outputs.package-manager-version }}'
+
+      - name: Build all apps
+        env:
+          CYPRESS_INSTALL_BINARY: 0
+        run: |
+          for APP in socialsharing_*/; do
+            (cd "$APP" && npm ci && npm run build)
+          done
+
+      - name: Package every app and check the archives
+        run: bash .github/scripts/check-appstore-package.sh
