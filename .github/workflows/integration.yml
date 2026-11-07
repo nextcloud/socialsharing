@@ -118,6 +118,22 @@ jobs:
           done < "$RUNNER_TEMP/apps"
           exit $FAILED
 
+      - name: Create a file with a link share
+        id: share
+        run: |
+          curl -sf -u admin:admin -X PUT --data-binary 'socialsharing' http://localhost:8080/remote.php/dav/files/admin/socialsharing.txt
+          SHARE=$(curl -sf -u admin:admin -H 'OCS-APIRequest: true' -H 'Accept: application/json' -X POST 'http://localhost:8080/ocs/v2.php/apps/files_sharing/api/v1/shares?path=/socialsharing.txt&shareType=3')
+          echo "file-id=$(jq -r '.ocs.data.file_source' <<< "$SHARE")" >> "$GITHUB_OUTPUT"
+          echo "token=$(jq -r '.ocs.data.token' <<< "$SHARE")" >> "$GITHUB_OUTPUT"
+
+      - name: Check the sharing actions in the browser
+        env:
+          FILE_ID: ${{ steps.share.outputs.file-id }}
+          TOKEN: ${{ steps.share.outputs.token }}
+        run: |
+          mapfile -t APPS < "$RUNNER_TEMP/apps"
+          node socialsharing/tests/browser/sidebar.mjs http://localhost:8080 admin admin "$FILE_ID" "$TOKEN" "${APPS[@]}"
+
       - name: Show the server log on failure
         if: failure()
         run: |
