@@ -13,7 +13,7 @@ Enable direct sharing of files via Bluesky, using shared links.
 This app always links to bsky.app. Using other domains is not possible with this app.
 ]]>	</description>
 	<version>5.0.3</version>
-	<licence>agpl</licence>
+	<licence>AGPL-3.0-or-later</licence>
 	<author>Jana Peper</author>
 	<namespace>SocialSharingBluesky</namespace>
 	<category>social</category>

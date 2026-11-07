@@ -9,7 +9,7 @@
 	<summary>Enable direct sharing of files via Telegram, using shared links.</summary>
 	<description>Enable direct sharing of files via Telegram, using shared links.</description>
 	<version>5.0.3</version>
-	<licence>agpl</licence>
+	<licence>AGPL-3.0-or-later</licence>
 	<author>Roeland Jago Douma</author>
 	<namespace>SocialSharingTelegram</namespace>
 	<category>social</category>
