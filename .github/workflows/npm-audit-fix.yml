@@ -86,61 +86,70 @@ jobs:
         run: npm i -g 'npm@${{ steps.versions.outputs.package-manager-version }}'
 
       - name: Fix npm audit (socialsharing_bluesky)
+        id: audit-bluesky
         if: steps.freeze.outputs.active != 'true'
         uses: nextcloud-libraries/npm-audit-action@1b1728b2b4a7a78d69de65608efcf4db0e3e42d0 # v0.2.0
         with:
           working-directory: socialsharing_bluesky
-          output-path: ${{ runner.temp }}/npm-audit-socialsharing_bluesky.md
 
       - name: Fix npm audit (socialsharing_diaspora)
+        id: audit-diaspora
         if: steps.freeze.outputs.active != 'true'
         uses: nextcloud-libraries/npm-audit-action@1b1728b2b4a7a78d69de65608efcf4db0e3e42d0 # v0.2.0
         with:
           working-directory: socialsharing_diaspora
-          output-path: ${{ runner.temp }}/npm-audit-socialsharing_diaspora.md
 
       - name: Fix npm audit (socialsharing_email)
+        id: audit-email
         if: steps.freeze.outputs.active != 'true'
         uses: nextcloud-libraries/npm-audit-action@1b1728b2b4a7a78d69de65608efcf4db0e3e42d0 # v0.2.0
         with:
           working-directory: socialsharing_email
-          output-path: ${{ runner.temp }}/npm-audit-socialsharing_email.md
 
       - name: Fix npm audit (socialsharing_facebook)
+        id: audit-facebook
         if: steps.freeze.outputs.active != 'true'
         uses: nextcloud-libraries/npm-audit-action@1b1728b2b4a7a78d69de65608efcf4db0e3e42d0 # v0.2.0
         with:
           working-directory: socialsharing_facebook
-          output-path: ${{ runner.temp }}/npm-audit-socialsharing_facebook.md
 
       - name: Fix npm audit (socialsharing_telegram)
+        id: audit-telegram
         if: steps.freeze.outputs.active != 'true'
         uses: nextcloud-libraries/npm-audit-action@1b1728b2b4a7a78d69de65608efcf4db0e3e42d0 # v0.2.0
         with:
           working-directory: socialsharing_telegram
-          output-path: ${{ runner.temp }}/npm-audit-socialsharing_telegram.md
 
       - name: Fix npm audit (socialsharing_twitter)
+        id: audit-twitter
         if: steps.freeze.outputs.active != 'true'
         uses: nextcloud-libraries/npm-audit-action@1b1728b2b4a7a78d69de65608efcf4db0e3e42d0 # v0.2.0
         with:
           working-directory: socialsharing_twitter
-          output-path: ${{ runner.temp }}/npm-audit-socialsharing_twitter.md
 
       - name: Fix npm audit (socialsharing_whatsapp)
+        id: audit-whatsapp
         if: steps.freeze.outputs.active != 'true'
         uses: nextcloud-libraries/npm-audit-action@1b1728b2b4a7a78d69de65608efcf4db0e3e42d0 # v0.2.0
         with:
           working-directory: socialsharing_whatsapp
-          output-path: ${{ runner.temp }}/npm-audit-socialsharing_whatsapp.md
 
       - name: Collect npm audit reports
         if: steps.freeze.outputs.active != 'true'
+        env:
+          AUDIT_BLUESKY: ${{ steps.audit-bluesky.outputs.markdown }}
+          AUDIT_DIASPORA: ${{ steps.audit-diaspora.outputs.markdown }}
+          AUDIT_EMAIL: ${{ steps.audit-email.outputs.markdown }}
+          AUDIT_FACEBOOK: ${{ steps.audit-facebook.outputs.markdown }}
+          AUDIT_TELEGRAM: ${{ steps.audit-telegram.outputs.markdown }}
+          AUDIT_TWITTER: ${{ steps.audit-twitter.outputs.markdown }}
+          AUDIT_WHATSAPP: ${{ steps.audit-whatsapp.outputs.markdown }}
         run: |
-          for APP in socialsharing_bluesky socialsharing_diaspora socialsharing_email socialsharing_facebook socialsharing_telegram socialsharing_twitter socialsharing_whatsapp; do
-            echo "## $APP"
+          for APP in bluesky diaspora email facebook telegram twitter whatsapp; do
+            VAR="AUDIT_${APP^^}"
+            echo "## socialsharing_$APP"
             echo
-            cat "$RUNNER_TEMP/npm-audit-$APP.md" 2>/dev/null || echo 'No report.'
+            echo "${!VAR:-No report.}"
             echo
           done > "$RUNNER_TEMP/npm-audit.md"
 
